@@ -9,7 +9,80 @@
 </head>
 <body>
 <main class="page">
-<header class="header">
+<div class="popups">
+    <div class="popup">
+        <div class="popup__main popup-ticket">
+            <div class="popup__top">
+                <div class="popup__icon">
+                    <img src="img/icons/sending.svg" alt="">
+                </div>
+                <div class="popup__titles">
+                    <h3 class="popup__title">Create a ticket for our support team</h3>
+                    <h4 class="popup__subtitle">We'll respond as soon as posssible</h4>
+                </div>
+                <button class="popup__closer popup-closer">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <form class="popup__form">
+                <div class="popup__form_block">
+                    <input id="mail" type="email" class="_error" required>
+                    <label for="mail">E-mail</label>
+                    <span>* Поле заполнено неверно</span>
+                </div>
+                <div class="popup__form_block">
+                    <input id="name" type="text" required>
+                    <label for="name">Your name</label>
+                    <span>* Поле заполнено неверно</span>
+                </div>
+                <div class="popup__form_block">
+                    <textarea id="issue" required></textarea>
+                    <label for="issue">Describe your issue</label>
+                    <span>* Поле заполнено неверно</span>
+                </div>
+                <button class="orange popup__button">submit</button>
+            </form>
+        </div>
+        <div class="popup__main popup-thanks">
+            <div class="popup__top">
+                <div class="popup__icon">
+                    <img src="img/icons/sending.svg" alt="">
+                </div>
+                <div class="popup__titles">
+                    <h3 class="popup__title">Create a ticket for our support team</h3>
+                    <h4 class="popup__subtitle">We'll respond as soon as posssible</h4>
+                </div>
+                <button class="popup__closer popup-closer">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="popup__blog">
+                <h5 class="popup__blog_title">In the meantime check out our blog for some great tips and trics</h5>
+                <div class="popup__blog_items">
+                    <a href="#" class="popup__blog_item">
+                        <img loading="lazy" src="img/blog/item1.jpg" alt="">
+                        <span>Welcome in new Bitbunch office</span>
+                    </a>
+                    <a href="#" class="popup__blog_item">
+                        <img loading="lazy" src="img/blog/item2.jpg" alt="">
+                        <span>Kenya Hoi joined&nbsp;Bitbunch</span>
+                    </a>
+                    <a href="#" class="popup__blog_item">
+                        <img loading="lazy" src="img/blog/item3.jpg" alt="">
+                        <span>Is there a spy on&nbsp;your&nbsp;desk?</span>
+                    </a>
+                    <a href="#" class="popup__blog_item not-tablet">
+                        <img loading="lazy" src="img/blog/item4.jpg" alt="">
+                        <span>Blockchain AR&nbsp;Summit&nbsp;2018</span>
+                    </a>
+                </div>
+                <button class="orange popup__button popup-closer">CLOSE</button>
+            </div>
+        </div>
+    </div>
+</div><header class="header">
     <div class="container">
         <div class="header__row">
             <div class="header__left">
