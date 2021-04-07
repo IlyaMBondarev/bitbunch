@@ -1,6 +1,18 @@
 
 document.querySelector('.page').classList.add('loaded');
 
+let mainScreenAnimationBlock = document.querySelector('.main-screen__anim');
+let svgAnimation = mainScreenAnimationBlock.querySelector('svg');
+let groups = svgAnimation.querySelectorAll('g');
+
+setTimeout(() => {
+    groups.forEach((g, i) => {
+        setTimeout(() => {
+            g.classList.add('animated');
+        }, i * 100)
+    })
+}, 500)
+
 let popupOpeners = document.querySelectorAll('.popup-opener');
 let popupClosers = document.querySelectorAll('.popup-closer');
 let popupsParent = document.querySelector('.popup');
